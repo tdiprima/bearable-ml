@@ -1,0 +1,5 @@
+λ uv run mlflow_experiment_tracking.py
+
+Logged accuracy: 1.0
+
+MLFlow experiment completed in 4.3184 seconds

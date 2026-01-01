@@ -1,0 +1,168 @@
+λ uv run train_and_rank.py
+No path specified. Models will be saved in: "AutogluonModels/ag-20251231_182700"
+Verbosity: 2 (Standard Logging)
+
+=================== System Info ===================
+AutoGluon Version:  1.4.0
+Python Version:     3.11.14
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Tue Nov 25 05:13:22 EST 2025
+CPU Count:          24
+Memory Avail:       93.69 GB / 125.29 GB (74.8%)
+Disk Space Avail:   52.38 GB / 244.29 GB (21.4%)
+===================================================
+
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets. Defaulting to `'medium'`...
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='extreme' : New in v1.4: Massively better than 'best' on datasets <30000 samples by using new models meta-learned on https://tabarena.ai: TabPFNv2, TabICL, Mitra, and TabM. Absolute best accuracy. Requires a GPU. Recommended 64 GB CPU memory and 32+ GB GPU memory.
+	presets='best'    : Maximize accuracy. Recommended for most users. Use in competitions and benchmarks.
+	presets='high'    : Strong accuracy with fast inference speed.
+	presets='good'    : Good accuracy with very fast inference speed.
+	presets='medium'  : Fast training time, ideal for initial prototyping.
+
+Using hyperparameters preset: hyperparameters='default'
+
+Beginning AutoGluon training ...
+
+AutoGluon will save models to "~/projects/bearable-ml/src/AutogluonModels/ag-20251231_182700"
+
+Train Data Rows:    160
+Train Data Columns: 12
+Label Column:       price
+
+AutoGluon infers your prediction problem is: 'regression' (because dtype of label-column == int and many unique label-values observed).
+	Label info (max, min, mean, stddev): (725000, 125000, 371206.25, 183210.23072)
+	If 'regression' is not the correct problem_type, please manually specify the problem_type parameter during Predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression', 'quantile'])
+Problem Type:       regression
+
+Preprocessing data ...
+
+Using Feature Generators to preprocess the data ...
+
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    95932.58 MB
+	Train Data (Original)  Memory Usage: 0.02 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 1 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting CategoryFeatureGenerator...
+			Fitting CategoryMemoryMinimizeFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Unused Original Features (Count: 1): ['house_id']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('object', []) : 1 | ['house_id']
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 2 | ['bathrooms', 'distance_to_downtown_miles']
+		('int', [])   : 9 | ['sqft', 'bedrooms', 'age_years', 'lot_size_sqft', 'garage_spaces', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', [])     : 2 | ['bathrooms', 'distance_to_downtown_miles']
+		('int', [])       : 8 | ['sqft', 'bedrooms', 'age_years', 'lot_size_sqft', 'garage_spaces', ...]
+		('int', ['bool']) : 1 | ['has_pool']
+	0.0s = Fit runtime
+	11 features in original data used to generate 11 features in processed data.
+	Train Data (Processed) Memory Usage: 0.01 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.04s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'root_mean_squared_error'
+	This metric's sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.2, Train Rows: 128, Val Rows: 32
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+}
+Fitting 9 L1 models, fit_strategy="sequential" ...
+
+Fitting model: LightGBMXT ...
+	Fitting with cpus=24, gpus=0, mem=0.0/93.5 GB
+	-19504.5518	 = Validation score   (-root_mean_squared_error)
+	2.51s	 = Training   runtime
+	0.0s	 = Validation runtime
+
+Fitting model: LightGBM ...
+	Fitting with cpus=24, gpus=0, mem=0.0/93.5 GB
+	-19369.9894	 = Validation score   (-root_mean_squared_error)
+	0.28s	 = Training   runtime
+	0.0s	 = Validation runtime
+
+Fitting model: RandomForestMSE ...
+	Fitting with cpus=24, gpus=0
+	-2609.7203	 = Validation score   (-root_mean_squared_error)
+	1.02s	 = Training   runtime
+	0.07s	 = Validation runtime
+
+Fitting model: CatBoost ...
+	Fitting with cpus=24, gpus=0
+	Warning: Exception caused CatBoost to fail during training (ImportError)... Skipping this model.
+		`import catboost` failed. A quick tip is to install via `pip install autogluon.tabular[catboost]==1.4.0`.
+
+Fitting model: ExtraTreesMSE ...
+	Fitting with cpus=24, gpus=0
+	-2383.5155	 = Validation score   (-root_mean_squared_error)
+	0.94s	 = Training   runtime
+	0.08s	 = Validation runtime
+
+Fitting model: NeuralNetFastAI ...
+	Fitting with cpus=24, gpus=0, mem=0.0/93.4 GB
+	-10562.8856	 = Validation score   (-root_mean_squared_error)
+	1.75s	 = Training   runtime
+	0.01s	 = Validation runtime
+
+Fitting model: XGBoost ...
+	Fitting with cpus=24, gpus=0
+	Warning: Exception caused XGBoost to fail during training (ImportError)... Skipping this model.
+		`import xgboost` failed. A quick tip is to install via `pip install autogluon.tabular[xgboost]==1.4.0`.
+
+Fitting model: NeuralNetTorch ...
+	Fitting with cpus=24, gpus=0, mem=0.0/93.4 GB
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+
+
+The Good News
+This error only affects the NeuralNetTorch model — AutoGluon skipped it and continued training the other models. Your script likely still completed and produced a leaderboard with the remaining models (LightGBM, CatBoost, XGBoost, RandomForest, etc.).
+
+
+Fitting model: LightGBMLarge ...
+	Fitting with cpus=24, gpus=0, mem=0.0/93.4 GB
+	-4258.1533	 = Validation score   (-root_mean_squared_error)
+	0.94s	 = Training   runtime
+	0.0s	 = Validation runtime
+
+Fitting model: WeightedEnsemble_L2 ...
+	Ensemble Weights: {'ExtraTreesMSE': 0.625, 'RandomForestMSE': 0.292, 'LightGBMLarge': 0.083}
+	-2329.5596	 = Validation score   (-root_mean_squared_error)
+	0.01s	 = Training   runtime
+	0.0s	 = Validation runtime
+
+AutoGluon training complete, total runtime = 8.42s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 216.7 rows/s (32 batch size)
+
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("~/projects/bearable-ml/src/AutogluonModels/ag-20251231_182700")
+
+                 model    score_test     score_val  ... stack_level  can_infer  fit_order
+0  WeightedEnsemble_L2  -3521.536929  -2329.559579  ...           2       True          7
+1        ExtraTreesMSE  -3726.803925  -2383.515493  ...           1       True          4
+2      RandomForestMSE  -3727.752623  -2609.720279  ...           1       True          3
+3        LightGBMLarge  -3866.944077  -4258.153252  ...           1       True          6
+4             LightGBM  -9665.797722 -19369.989415  ...           1       True          2
+5           LightGBMXT -11347.783340 -19504.551818  ...           1       True          1
+6      NeuralNetFastAI -11794.342777 -10562.885638  ...           1       True          5
+
+[7 rows x 13 columns]
+
+AutoGluon training completed in 9.6838 seconds

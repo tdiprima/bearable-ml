@@ -1,0 +1,14 @@
+λ uv run fastai_image_classifier.py
+
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+Downloading: "https://download.pytorch.org/models/resnet34-b627a593.pth" to ~/.cache/torch/hub/checkpoints/resnet34-b627a593.pth
+
+epoch     train_loss  valid_loss  error_rate  time    
+0         0.146280    0.013788    0.005413    01:44                                             
+epoch     train_loss  valid_loss  error_rate  time    
+0         0.055871    0.019759    0.004736    02:21                                             
+
+Prediction: cat; Probability: 1.0000                                        
+
+FastAI image classification completed in 269.2754 seconds (4.5 minutes)

@@ -1,0 +1,168 @@
+λ uv run optuna_with_pruner.py
+
+[I 2026-01-01 08:52:59,744] A new study created in memory with name: no-name-ef16ed92-25c5-4753-9b87-d6f58b8a40c7
+
+[I 2026-01-01 08:52:59,756] Trial 0 finished with value: 0.4066666666666667 and parameters: {'C': 0.0015488008680002653, 
+'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,764] Trial 1 finished with value: 0.2866666666666667 and parameters: {'C': 0.00023899359004170165, 'kernel': 'rbf'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,772] Trial 2 finished with value: 0.2866666666666667 and parameters: {'C': 0.0007141670777728788, 'kernel': 'rbf'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,779] Trial 3 finished with value: 0.2866666666666667 and parameters: {'C': 0.00016946921667065145, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,787] Trial 4 finished with value: 0.2866666666666667 and parameters: {'C': 0.00250966392037644, 'kernel': 'rbf'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,795] Trial 5 finished with value: 0.2866666666666667 and parameters: {'C': 0.007056649983603103, 'kernel': 'rbf'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,802] Trial 6 finished with value: 0.2866666666666667 and parameters: {'C': 0.0008216094103909341, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,809] Trial 7 finished with value: 0.2866666666666667 and parameters: {'C': 0.0007514424943244665, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,816] Trial 8 finished with value: 0.2866666666666667 and parameters: {'C': 0.00020182349877775056, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,823] Trial 9 finished with value: 0.2866666666666667 and parameters: {'C': 0.0058694407722200475, 'kernel': 'rbf'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,833] Trial 10 finished with value: 0.4066666666666667 and parameters: {'C': 0.002125569837004032, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,843] Trial 11 finished with value: 0.4066666666666667 and parameters: {'C': 0.0020827193743555893, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,853] Trial 12 finished with value: 0.4066666666666667 and parameters: {'C': 0.0022312442797836917, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,865] Trial 13 finished with value: 0.4066666666666667 and parameters: {'C': 0.0014400199579293704, 'kernel': 'linear'}. Best is trial 0 with value: 0.4066666666666667.
+
+[I 2026-01-01 08:52:59,875] Trial 14 finished with value: 0.6533333333333333 and parameters: {'C': 0.004004060140576414, 'kernel': 'linear'}. Best is trial 14 with value: 0.6533333333333333.
+
+[I 2026-01-01 08:52:59,884] Trial 15 finished with value: 0.66 and parameters: {'C': 0.004186369583966698, 'kernel': 'linear'}. Best is trial 15 with value: 0.66.
+
+[I 2026-01-01 08:52:59,893] Trial 16 finished with value: 0.6733333333333333 and parameters: {'C': 0.004600784476200001, 'kernel': 'linear'}. Best is trial 16 with value: 0.6733333333333333.
+
+[I 2026-01-01 08:52:59,902] Trial 17 finished with value: 0.66 and parameters: {'C': 0.004356003704931782, 'kernel': 'linear'}. Best is trial 16 with value: 0.6733333333333333.
+
+[I 2026-01-01 08:52:59,911] Trial 18 finished with value: 0.9066666666666666 and parameters: {'C': 0.008286780092979175, 'kernel': 'linear'}. Best is trial 18 with value: 0.9066666666666666.
+
+[I 2026-01-01 08:52:59,919] Trial 19 finished with value: 0.94 and parameters: {'C': 0.008952196685315337, 'kernel': 'linear'}. Best is trial 19 with value: 0.94.
+
+[I 2026-01-01 08:52:59,928] Trial 20 finished with value: 0.94 and parameters: {'C': 0.009324071140055063, 'kernel': 'linear'}. Best is trial 19 with value: 0.94.
+
+[I 2026-01-01 08:52:59,937] Trial 21 finished with value: 0.94 and parameters: {'C': 0.0096238104471354, 'kernel': 'linear'}. Best is trial 19 with value: 0.94.
+
+[I 2026-01-01 08:52:59,946] Trial 22 finished with value: 0.94 and parameters: {'C': 0.009893474906530707, 'kernel': 'linear'}. Best is trial 19 with value: 0.94.
+
+[I 2026-01-01 08:52:59,955] Trial 23 finished with value: 0.9466666666666667 and parameters: {'C': 0.009072825252594719, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:52:59,963] Trial 24 pruned. 
+
+[I 2026-01-01 08:52:59,972] Trial 25 finished with value: 0.7333333333333334 and parameters: {'C': 0.005634546053893734, 
+'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:52:59,979] Trial 26 pruned. 
+
+[I 2026-01-01 08:52:59,988] Trial 27 finished with value: 0.8266666666666667 and parameters: {'C': 0.006709822750103094, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:52:59,997] Trial 28 finished with value: 0.94 and parameters: {'C': 0.009925750518470333, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,004] Trial 29 pruned. 
+
+[I 2026-01-01 08:53:00,013] Trial 30 finished with value: 0.4066666666666667 and parameters: {'C': 0.0014403807415327976, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,022] Trial 31 finished with value: 0.8866666666666667 and parameters: {'C': 0.00750075402012477, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,031] Trial 32 finished with value: 0.7399999999999999 and parameters: {'C': 0.005696952601532406, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,040] Trial 33 finished with value: 0.94 and parameters: {'C': 0.009869544257003954, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,050] Trial 34 pruned. 
+
+[I 2026-01-01 08:53:00,059] Trial 35 finished with value: 0.9133333333333332 and parameters: {'C': 0.007923742025103358, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,068] Trial 36 pruned. 
+
+[I 2026-01-01 08:53:00,079] Trial 37 pruned. 
+
+[I 2026-01-01 08:53:00,090] Trial 38 finished with value: 0.7000000000000001 and parameters: {'C': 0.005393933818042202, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,099] Trial 39 pruned. 
+
+[I 2026-01-01 08:53:00,107] Trial 40 pruned. 
+
+[I 2026-01-01 08:53:00,117] Trial 41 finished with value: 0.94 and parameters: {'C': 0.009022795934417325, 'kernel': 
+'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,126] Trial 42 finished with value: 0.94 and parameters: {'C': 0.009629876335988864, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,136] Trial 43 finished with value: 0.8266666666666667 and parameters: {'C': 0.006707915388735063, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,147] Trial 44 finished with value: 0.6733333333333333 and parameters: {'C': 0.004890672100305041, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,157] Trial 45 finished with value: 0.9133333333333332 and parameters: {'C': 0.007935514987450588, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,167] Trial 46 finished with value: 0.8266666666666667 and parameters: {'C': 0.006521926021278354, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,175] Trial 47 pruned. 
+
+[I 2026-01-01 08:53:00,185] Trial 48 finished with value: 0.9066666666666666 and parameters: {'C': 0.00837934727686999, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,193] Trial 49 pruned. 
+
+[I 2026-01-01 08:53:00,204] Trial 50 finished with value: 0.7799999999999999 and parameters: {'C': 0.006044082602939064, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,214] Trial 51 finished with value: 0.9466666666666667 and parameters: {'C': 0.009965262987340438, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,226] Trial 52 finished with value: 0.94 and parameters: {'C': 0.009691972467257741, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+
+[I 2026-01-01 08:53:00,237] Trial 53 finished with value: 0.9133333333333332 and parameters: {'C': 0.007920364990990492, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,245] Trial 54 pruned. 
+[I 2026-01-01 08:53:00,254] Trial 55 finished with value: 0.82 and parameters: {'C': 0.006415743625354767, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,262] Trial 56 pruned. 
+[I 2026-01-01 08:53:00,270] Trial 57 pruned. 
+[I 2026-01-01 08:53:00,280] Trial 58 finished with value: 0.9066666666666666 and parameters: {'C': 0.008307392485639466, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,288] Trial 59 pruned. 
+[I 2026-01-01 08:53:00,296] Trial 60 pruned. 
+[I 2026-01-01 08:53:00,305] Trial 61 finished with value: 0.94 and parameters: {'C': 0.009701636346051456, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,315] Trial 62 finished with value: 0.8466666666666667 and parameters: {'C': 0.006833548172436568, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,324] Trial 63 finished with value: 0.9466666666666667 and parameters: {'C': 0.009979523569273873, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,333] Trial 64 finished with value: 0.9133333333333332 and parameters: {'C': 0.008403783881794167, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,348] Trial 65 finished with value: 0.8866666666666667 and parameters: {'C': 0.00736016907827044, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,356] Trial 66 pruned. 
+[I 2026-01-01 08:53:00,363] Trial 67 pruned. 
+[I 2026-01-01 08:53:00,373] Trial 68 pruned. 
+[I 2026-01-01 08:53:00,384] Trial 69 finished with value: 0.94 and parameters: {'C': 0.009899293555010173, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,393] Trial 70 pruned. 
+[I 2026-01-01 08:53:00,404] Trial 71 finished with value: 0.9333333333333332 and parameters: {'C': 0.008807852518204587, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,413] Trial 72 finished with value: 0.8866666666666667 and parameters: {'C': 0.007406882408450824, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,423] Trial 73 finished with value: 0.9466666666666667 and parameters: {'C': 0.009997527392343006, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,432] Trial 74 finished with value: 0.9199999999999999 and parameters: {'C': 0.008570419996812533, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,443] Trial 75 finished with value: 0.8866666666666667 and parameters: {'C': 0.007303838160371726, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,452] Trial 76 finished with value: 0.94 and parameters: {'C': 0.008900086757328951, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,460] Trial 77 pruned. 
+[I 2026-01-01 08:53:00,469] Trial 78 finished with value: 0.8000000000000002 and parameters: {'C': 0.006227141285128423, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,479] Trial 79 finished with value: 0.94 and parameters: {'C': 0.009843348837233227, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,488] Trial 80 finished with value: 0.8866666666666667 and parameters: {'C': 0.007517036636130735, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,498] Trial 81 finished with value: 0.94 and parameters: {'C': 0.009926763743502636, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,507] Trial 82 finished with value: 0.9199999999999999 and parameters: {'C': 0.008626032146877845, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,516] Trial 83 finished with value: 0.8533333333333334 and parameters: {'C': 0.0069362900905575115, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,527] Trial 84 finished with value: 0.9133333333333332 and parameters: {'C': 0.007815881662613754, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,537] Trial 85 finished with value: 0.94 and parameters: {'C': 0.008966610413736855, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,547] Trial 86 pruned. 
+[I 2026-01-01 08:53:00,556] Trial 87 pruned. 
+[I 2026-01-01 08:53:00,564] Trial 88 pruned. 
+[I 2026-01-01 08:53:00,575] Trial 89 finished with value: 0.9133333333333332 and parameters: {'C': 0.007929856383623504, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,585] Trial 90 finished with value: 0.94 and parameters: {'C': 0.008997092839697648, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,595] Trial 91 finished with value: 0.94 and parameters: {'C': 0.009951861593009537, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,605] Trial 92 finished with value: 0.8266666666666667 and parameters: {'C': 0.006682136244353671, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,616] Trial 93 finished with value: 0.94 and parameters: {'C': 0.00896732507046082, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,626] Trial 94 finished with value: 0.9466666666666667 and parameters: {'C': 0.00999811382358718, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,636] Trial 95 finished with value: 0.9133333333333332 and parameters: {'C': 0.007824641947981876, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,646] Trial 96 finished with value: 0.8533333333333334 and parameters: {'C': 0.006899448966416293, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,654] Trial 97 pruned. 
+[I 2026-01-01 08:53:00,663] Trial 98 finished with value: 0.9066666666666666 and parameters: {'C': 0.008223036522986255, 'kernel': 'linear'}. Best is trial 23 with value: 0.9466666666666667.
+[I 2026-01-01 08:53:00,671] Trial 99 pruned. 
+
+Best trial value: 0.9466666666666667
+
+Best params: {'C': 0.009072825252594719, 'kernel': 'linear'}
+
+Number of pruned trials: 25
+
+Optuna optimization with pruning completed in 0.9331 seconds
