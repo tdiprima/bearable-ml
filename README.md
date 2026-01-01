@@ -77,16 +77,8 @@ These examples are written for **future me**, tired me, and curious me.
 
 If it's readable, runnable, and understandable — it belongs here.
 
-## Image Credit
-
-**Image credit:** Photo by  
-[Mabel Amber](https://pixabay.com/users/mabelamber-1377835/) on Pixabay.  
-Image obtained via  
-[Real Python](https://files.realpython.com/media/cat.8ce1dab25b77.jpg)  
-and resized to 512×512 pixels.
-
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <br>

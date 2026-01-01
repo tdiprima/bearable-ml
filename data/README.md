@@ -52,4 +52,14 @@ Built-in patterns for NeuralProphet to discover:
 
 This gives NeuralProphet enough data to detect both weekly and yearly patterns.
 
+---
+
+## 4. Image Credit
+
+**Image credit:** Photo by  
+[Mabel Amber](https://pixabay.com/users/mabelamber-1377835/) on Pixabay.  
+Image obtained via  
+[Real Python](https://files.realpython.com/media/cat.8ce1dab25b77.jpg)  
+and resized to 512×512 pixels.
+
 <br>
